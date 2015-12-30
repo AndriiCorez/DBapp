@@ -16,7 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self managedObjectModel];
+    [self persistentStoreCoordinator];
+    
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    NSAssert(moc != nil, @"Unable to create Managed Object Context");
+    
     return YES;
 }
 
