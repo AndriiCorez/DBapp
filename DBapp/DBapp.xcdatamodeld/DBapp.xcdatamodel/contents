@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Chore" representedClassName="ChoreMO" syncable="YES">
+        <attribute name="chore_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="log" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Log" inverseName="chore_id" inverseEntity="Log" syncable="YES"/>
+    </entity>
+    <entity name="Log" representedClassName="LogMO" syncable="YES">
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="chore_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chore" inverseName="log" inverseEntity="Chore" syncable="YES"/>
+        <relationship name="person_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="log" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="PersonMO" syncable="YES">
+        <attribute name="person_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="log" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Log" inverseName="person_id" inverseEntity="Log" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Chore" positionX="142" positionY="-96" width="128" height="73"/>
+        <element name="Person" positionX="-189" positionY="-99" width="128" height="73"/>
+        <element name="Log" positionX="-27" positionY="-99" width="128" height="88"/>
+    </elements>
 </model>

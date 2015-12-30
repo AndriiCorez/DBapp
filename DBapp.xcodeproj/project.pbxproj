@@ -15,6 +15,9 @@
 		41C720FC1C3430E600268BB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C720FB1C3430E600268BB1 /* Images.xcassets */; };
 		41C720FF1C3430E600268BB1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41C720FD1C3430E600268BB1 /* LaunchScreen.xib */; };
 		41C7210B1C3430E600268BB1 /* DBappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7210A1C3430E600268BB1 /* DBappTests.m */; };
+		41C721161C343E4700268BB1 /* LogMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C721151C343E4700268BB1 /* LogMO.m */; };
+		41C721191C343E4800268BB1 /* ChoreMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C721181C343E4800268BB1 /* ChoreMO.m */; };
+		41C7211C1C343E4900268BB1 /* PersonMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7211B1C343E4900268BB1 /* PersonMO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 		41C721041C3430E600268BB1 /* DBappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C721091C3430E600268BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41C7210A1C3430E600268BB1 /* DBappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBappTests.m; sourceTree = "<group>"; };
+		41C721141C343E4700268BB1 /* LogMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogMO.h; sourceTree = "<group>"; };
+		41C721151C343E4700268BB1 /* LogMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogMO.m; sourceTree = "<group>"; };
+		41C721171C343E4800268BB1 /* ChoreMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreMO.h; sourceTree = "<group>"; };
+		41C721181C343E4800268BB1 /* ChoreMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoreMO.m; sourceTree = "<group>"; };
+		41C7211A1C343E4900268BB1 /* PersonMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonMO.h; sourceTree = "<group>"; };
+		41C7211B1C343E4900268BB1 /* PersonMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonMO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +100,12 @@
 				41C720FB1C3430E600268BB1 /* Images.xcassets */,
 				41C720FD1C3430E600268BB1 /* LaunchScreen.xib */,
 				41C720F21C3430E600268BB1 /* DBapp.xcdatamodeld */,
+				41C7211A1C343E4900268BB1 /* PersonMO.h */,
+				41C7211B1C343E4900268BB1 /* PersonMO.m */,
+				41C721171C343E4800268BB1 /* ChoreMO.h */,
+				41C721181C343E4800268BB1 /* ChoreMO.m */,
+				41C721141C343E4700268BB1 /* LogMO.h */,
+				41C721151C343E4700268BB1 /* LogMO.m */,
 				41C720EB1C3430E600268BB1 /* Supporting Files */,
 			);
 			path = DBapp;
@@ -222,9 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C7211C1C343E4900268BB1 /* PersonMO.m in Sources */,
 				41C720F41C3430E600268BB1 /* DBapp.xcdatamodeld in Sources */,
+				41C721191C343E4800268BB1 /* ChoreMO.m in Sources */,
 				41C720F11C3430E600268BB1 /* AppDelegate.m in Sources */,
 				41C720F71C3430E600268BB1 /* ViewController.m in Sources */,
+				41C721161C343E4700268BB1 /* LogMO.m in Sources */,
 				41C720EE1C3430E600268BB1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

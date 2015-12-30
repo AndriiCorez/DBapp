@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ChoreMO.h"
+#import "PersonMO.h"
+#import "LogMO.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +26,26 @@
     NSAssert(moc != nil, @"Unable to create Managed Object Context");
     
     return YES;
+}
+
+#pragma Managed Objects code
+
+-(ChoreMO *) createChoreMO{
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    ChoreMO *choreMO = [NSEntityDescription insertNewObjectForEntityForName:@"Chore" inManagedObjectContext:moc];
+    return choreMO;
+}
+
+-(PersonMO *) createPersonMO{
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    PersonMO *personMO = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:moc];
+    return personMO;
+}
+
+-(LogMO *) createLogMO{
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    LogMO *logMO = [NSEntityDescription insertNewObjectForEntityForName:@"Log" inManagedObjectContext:moc];
+    return logMO;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
